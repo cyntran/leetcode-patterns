@@ -55,7 +55,7 @@ var maxArea2 = function (height) {
   let rightPointer = height.length - 1;
   let leftPointer = 0;
   let maxArea = 0;
-  while (rightPointer !== leftPointer) {
+  while (rightPointer > leftPointer) {
     // Calculate the width
     let cWidth = rightPointer - leftPointer;
     // Calculate the Min height
