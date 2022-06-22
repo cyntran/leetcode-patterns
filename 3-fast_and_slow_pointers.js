@@ -26,6 +26,9 @@ var hasCycle = function (head) {
   let fast = head;
   let slow = head;
 
+  // When you are implementing the fast & slow pattern
+  // you need to check fast.next for null too
+
   while (fast && fast.next) {
     fast = fast.next.next;
     slow = slow.next;
